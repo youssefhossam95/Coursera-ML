@@ -78,7 +78,7 @@ fprintf('\nRunning K-Means clustering on example dataset.\n\n');
 load('ex7data2.mat');
 
 % Settings for running K-Means
-K = 3;
+K = 100;
 max_iters = 10;
 
 % For consistency, here we set centroids to specific values
@@ -106,7 +106,7 @@ pause;
 fprintf('\nRunning K-Means clustering on pixels from an image.\n\n');
 
 %  Load an image of a bird
-A = double(imread('bird_small.png'));
+A = double(imread('IMG.20150218.WA0024.jpg'));
 
 % If imread does not work for you, you can try instead
 %   load ('bird_small.mat');
@@ -123,7 +123,7 @@ X = reshape(A, img_size(1) * img_size(2), 3);
 
 % Run your K-Means algorithm on this data
 % You should try different values of K and max_iters here
-K = 16; 
+K = 100; 
 max_iters = 10;
 
 % When using K-Means, it is important the initialize the centroids
